@@ -80,7 +80,7 @@ defaults = {
   action: nil,
   backup_dir: File.join(ENV.fetch('PWD'), 'backup'),
   diff_format: :color,
-  resources: [DatadogBackup::Dashboards, DatadogBackup::Monitors, DatadogBackup::Synthetics],
+  resources: [DatadogBackup::Dashboards, DatadogBackup::Monitors, DatadogBackup::Synthetics, DatadogBackup::LogsPipelines],
   output_format: :yaml,
   force_restore: false
 }
